@@ -1,5 +1,5 @@
 # Pywhereisrunning
-
+[![Build Status](https://travis-ci.org/atomse/pywhereisrunning.svg?branch=master)](https://travis-ci.org/atomse/pywhereisrunning)
 
 To see where the python script is running when the script is running.
 
@@ -30,10 +30,17 @@ to make the function available.
 
 when you're run the script, use 
 
-* `kill -SIGUSR1 $(PID)`
-* `pywhereisrunning $(filename)`
+* `pywhereisrunning $(pid)`
 
 to show where the script is running.
 
 After the command, will show
 `main.py func=main line=9:`
+
+
+
+
+## TODOS
+
+
+[] `pywhereisrunning + $(filename)`
