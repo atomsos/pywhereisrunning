@@ -8,6 +8,14 @@ use the frame to display where the script is running.
 
 
 
+## Installation
+
+
+```bash
+pip install pywhereisrunning
+```
+
+
 
 ## Usage
 
