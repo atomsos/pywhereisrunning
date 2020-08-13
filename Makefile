@@ -30,11 +30,7 @@ reqs:
 	cat requirements.txt 
 
 build:
-	pip install cython twine
-	rm -rf build/ sdist/ dist/ $(Project)-*/ $(Project).egg-info/
-	mkdir -p dist/
-	python Encrypt.py -j4 --build-dir $(BUILD_DIR)
-	cd $(BUILD_DIR) && make build_base && make test_build && cp -r dist/*.whl ../../dist
+	make build_base
 
 build_base:
 	rm -rf build/ sdist/ dist/ $(Project)-*/ $(Project).egg-info/
