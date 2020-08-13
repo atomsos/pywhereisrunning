@@ -69,7 +69,7 @@ if __name__ == '__main__':
         install_requires=open('requirements.txt').read().split(),
         entry_points={
             "console_scripts": [
-                "pywhereisrunning=pywhereisrunning.pywhereisrunning:_main",
+                "pywhereisrunning=pywhereisrunning.main:_main",
             ],
         },
         extras_require={
