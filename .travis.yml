@@ -4,10 +4,11 @@
 language: python
 os: 
   - linux
-  # - osx
+  - osx
 
 python:
   - 3.6
+  - 3.7
 
 before_install:
   - uname -a
@@ -21,9 +22,8 @@ before_script:
 
 
 script:
-  - make build
+  - make build_base
   - make install
-  - make test
 
 notifications:
   email: false
